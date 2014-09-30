@@ -1,0 +1,98 @@
+﻿#columnas {
+    column-count:4;
+    column-gap:10px;
+    column-rule:2px dotted blue;
+    -webkit-column-count:4;
+    -webkit-column-gap:10px;
+    -webkit-column-rule:2px dotted blue;
+    -moz-column-count:4;
+    -moz-column-gap:10px;
+    -moz-column-rule:2px dotted blue;
+}
+#imagen:hover {
+    transition:transform 5s;
+
+   }
+#imagen:hover {
+    transform:rotate(30deg) translateX(100px) scale(1.5);
+
+   }
+
+#muevete {
+    position:absolute;
+    left:10px;
+    top:500px;
+    width:100px;
+    height:100px;
+    background-color:red;
+    z-index:1000;
+    animation: mover 10s;
+    -webkit-animation: mover 10s;
+}
+
+/* @keyframes mover {
+    from {left:10px;}
+    to {left:800px;}
+}
+
+@-webkit-keyframes mover {
+    from {left:10px;}
+    to {left:800px;}
+}*/
+
+@keyframes mover {
+    0% {left:10px;
+    }
+    25% {left:500px;
+    }
+    50% {left:250px;
+    }
+    75% {left:100px;
+    }
+    100% {left:10px;
+    }
+}
+
+@-webkit-keyframes mover {
+    0% {left:10px;
+    }
+    25% {left:500px;
+    }
+    50% {left:250px;
+    }
+    75% {left:100px;
+    }
+    100% {left:10px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #columnas {
+    column-count:2;
+    column-gap:5px;
+    column-rule:1px dotted blue;
+    -webkit-column-count:2;
+    -webkit-column-gap:5px;
+    -webkit-column-rule:1px dotted blue;
+    -moz-column-count:2;
+    -moz-column-gap:5px;
+    -moz-column-rule:1px dotted blue;
+    }
+}
+
+.bordeado {
+    border:3px solid blue;
+}
+.sombreado {
+    box-shadow:5px 20px green;
+}
+.degradado {
+    background: #f3c5bd; /* Old browsers */
+    background:-moz-linear-gradient(top, #f3c5bd 0%, #e86c57 42%, #ea2803 51%, #ff6600 75%, #c72200 100%); /* FF3.6+ */
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3c5bd), color-stop(42%,#e86c57), color-stop(51%,#ea2803), color-stop(75%,#ff6600), color-stop(100%,#c72200)); /* Chrome,Safari4+ */
+    background:-webkit-linear-gradient(top, #f3c5bd 0%,#e86c57 42%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* Chrome10+,Safari5.1+ */
+    background:-o-linear-gradient(top, #f3c5bd 0%,#e86c57 42%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* Opera 11.10+ */
+    background:-ms-linear-gradient(top, #f3c5bd 0%,#e86c57 42%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* IE10+ */
+    background:linear-gradient(to bottom, #f3c5bd 0%,#e86c57 42%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* W3C */
+}
+
